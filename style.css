@@ -1,5 +1,51 @@
-
-.fas fa-star
+*{
+    font-family:raleway, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.imagelogo
 {
-color: blue;
+    width: 120px;
+    height:40px;
+}
+ul
+{
+    list-style-type:none;
+    text-align: right;
+}
+li
+{
+display: inline;
+}
+.map
+{
+    border-top-left-radius: 100px 100px;
+    border-bottom-left-radius: 100px 100px;
+    background-color:#F2F2F2;
+}
+.marseille
+{
+    font-weight: bold;
+}
+.activites
+{
+    color:grey;
+    text-decoration: none;
+}
+.hebergements,.inscrire
+{
+    text-decoration: none;
+}
+.eco:hover,.fam:hover,.rom:hover,.ani:hover
+{
+    color: crimson;
+}
+.eco,.rom,.fam,.ani
+{
+    font-weight: bold;
+}
+.recherche
+{
+    background-color: #0065FC;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    color: ghostwhite;
 }
