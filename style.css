@@ -49,3 +49,55 @@ display: inline;
     border-bottom-right-radius: 100px;
     color: ghostwhite;
 }
+#hebergements 
+{
+    display: flex;
+    background-color: #F2F2F2;
+    flex-wrap: wrap;
+    width: 878px;
+    border-radius: 20px;
+}
+i
+{
+    color:#0065FC;
+}
+figure
+{
+    border: white solid 5px;
+    border-radius: 10px;
+}
+img
+{
+    border-radius: 10px 10px 0px 0px;
+}
+#populaires
+{
+    display: flex;
+    background-color: #F2F2F2;
+    flex-wrap: wrap;
+    width: 416px;
+    border-radius: 20px;
+}
+#activites
+{
+    display: flex; 
+    width: 1342px;
+    flex-wrap:nowrap;   
+}
+#foot
+{
+    display: flex;
+    background-color: #F2F2F2;
+}
+.propos
+{
+    margin: auto;
+}
+.chartre
+{
+    margin: auto;
+}
+.assistance
+{
+    margin: auto;
+}
