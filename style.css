@@ -1,73 +1,130 @@
-@media screen all and (min-device-width: 320px) and (max-device-width:1024px)
+body
 {
-    #hebergements
-    {
-        background-color: none;
-    }
-    #activites 
-    {
-        background-color: none; 
-    }
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden;metttre en fin de page */
 }
-*{
-    font-family:raleway, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.imagelogo
+.conteneur
 {
-    width: 120px;
-    height:40px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*
+{
+    font-family: 
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.image_logo
+{
+    display: inline-block;
+    margin-right: 800px;
+}
+.navigation
+{
+    display: inline-block;
+    
 }
 ul
 {
     list-style-type:none;
-    text-align: right;
 }
 li
 {
-display: inline;
-}
-.map
-{
-    border-top-left-radius: 100px 100px;
-    border-bottom-left-radius: 100px 100px;
-    background-color:#F2F2F2;
-}
-.marseille
-{
-    font-weight: bold;
+    display: inline;
 }
 .activites
 {
-    color:grey;
+    color: #696966;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.hebergements
+{
+    margin-right: 20px; 
     text-decoration: none;
 }
-.hebergements,.inscrire
+.inscrire
 {
     text-decoration: none;
 }
+.map
+{
+    display: inline-block;
+    border-radius: 100px 0px 0px 100px;
+    width:30px;
+    line-height: 32px;
+    text-align: center;
+    background-color:#dedad9;
+}
+.map i
+{
+    color:black;
+}
+.marseille_france
+{
+    display: inline-block;
+    font-weight:bold;  
+    line-height: 0px;
+    border-top:solid 1px #F2F2F2;
+    border-bottom:solid 1px #F2F2F2;
+}
+.recherche
+{
+    display: inline-block;
+    border-radius: 0PX 100px 100px 0px; 
+    text-align: center;
+    background-color: #0065FC;
+    width: 90px;
+    line-height: 0px;
+}
+#filtres
+{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+
+}
+.titref p,.economique p,.familiale p,.romantique p,.animaux p
+{
+    display:inline-block;
+    font-weight: bold;
+    margin-right:30px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+
+}
+.titref i,.economique i,.familiale i,.romantique i,.animaux i
+{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    line-height: 30px;
+    width: 30px;
+    text-align:center;
+    margin-right: 0px;
+    
+}
+.economique,.familiale,.romantique,.animaux
+{
+    border:solid 1px  #F2F2F2;
+    border-radius: 50px;
+    line-height:0px ;
+    width: 200px;
+    margin-right: 20px;
+    
+}
+
+}
+
 .eco:hover,.fam:hover,.rom:hover,.ani:hover
 {
     color: crimson;
 }
-.eco,.rom,.fam,.ani
-{
-    font-weight: bold;
-}
-.recherche
-{
-    background-color: #0065FC;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    color: ghostwhite;
-}
-#hebergements 
-{
-    display: flex;
-    background-color: #F2F2F2;
-    flex-wrap: wrap;
-    width: 878px;
-    border-radius: 20px;
-}
+
 i
 {
     color:#0065FC;
@@ -85,24 +142,21 @@ img
 {
     border-radius: 10px 10px 0px 0px;
 }
+
 #populaires
 {
-    display: flex;
+    display: block;
     background-color: #F2F2F2;
-    flex-wrap: wrap;
-    width: 416px;
+    flex-direction: column;
     border-radius: 20px;
 }
-#activites
-{
-    display: flex; 
-    width: 1342px;
-    flex-wrap:nowrap;   
-}
+    
+    
 #foot
 {
     display: flex;
     background-color: #F2F2F2;
+    margin: auto;
 }
 .propos
 {
