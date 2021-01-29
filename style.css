@@ -11,7 +11,11 @@ body
     margin-right: auto;
     
 }
-*
+@font-face {
+    font-family: 'raleway';
+    src: url("");
+  }
+body
 {
     font-family: 
 }
@@ -42,11 +46,11 @@ li
 {
     color: #696966;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .hebergements
 {
-    margin-right: 20px; 
+    margin-right: 40px; 
     text-decoration: none;
 }
 .inscrire
@@ -123,9 +127,7 @@ i
 }
 figure
 {
-    border: white double 5px;
-    border-radius: 10px;
-    background-color: white; 
+    
 }
 #titreimage1,#titreimage2,#titreimage3,#titreimage4,#titreimage5,#titreimage6
 {
@@ -140,18 +142,6 @@ img
     border-radius: 10px 10px 0px 0px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-}
-#hebergements_marseille
-{
-    background-color: #F2F2F2;
-    padding-top: 40px;
-    border-radius: 20px;
-    flex-wrap: wrap;
-    width: 69%;
-    display: flex;
-    justify-content: space-between;
-    height: 700px;
 }
 #hebergements
 {
@@ -159,6 +149,17 @@ img
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+}
+#hebergements_marseille
+{
+    background-color: #F2F2F2;
+    padding-top: 40px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
 }
 .titre_marseille
 {
@@ -170,31 +171,69 @@ img
 {
     width: 33%;
 }
+.cannebiere figure,.port figure,.mouettes figure,.mer figure,.panier figure,.amina figure
+{
+    border: white double 2px;
+    border-radius: 10px;
+    background-color: white; 
+}
 h4{
     margin-left: 40px;
     width: 100%;
 }
-
-
-    
-
-
-
 #populaires
 {
-    display: flex;
-    width: 29%;
     background-color: #F2F2F2;
-    flex-direction: column;
+    padding-top: 40px;
     border-radius: 20px;
+    flex-wrap: wrap;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    padding-bottom: 20px;
 }
-    
-    
+.titre_populaires
+{
+    margin-left: 20px;
+    width: 100%;
+}
+.titre_populaires i
+{
+    margin-left:110px ;
+} 
+.soleil_image,.soleil_titre,.eau_image,.eau_titre,.bleu_image,.bleu_titre
+{
+    display:inline-block;
+}
+.soleil_titre,.eau_titre,.bleu_titre
+{
+    margin-left: 10px;
+}
+#soleil figure,#eau figure, #bleu figure
+{
+    border: white double 2px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 350px;
+}
+#soleil
+{
+    margin-top: -40px;
+}
+
+
+
+
+
+
 #foot
 {
     display: flex;
     background-color: #F2F2F2;
-    margin: auto;
+    width: 100%;
 }
 .propos
 {
