@@ -100,7 +100,7 @@ li
     background-color: #DEEBFF;
     border-radius: 50%;
     line-height: 30px;
-    width: 30px;    
+    width: 30px; 
 }
 .economique,.familiale,.romantique,.animaux
 {
@@ -213,12 +213,24 @@ h4{
 {
     margin-top: -40px;
 }
-
-
-
-
-
-
+#activites
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-left: -40px;   
+}
+.port figure,.fort figure,.frioul figure,.parc figure,.dame figure,.longchamp figure
+{
+    box-shadow: 0px 2px 5px #F2F2F2;
+    border-radius: 10px;
+}
+.port figcaption,.fort figcaption,.frioul figcaption,.parc figcaption,.dame figcaption,.longchamp figcaption
+{
+    height: 40px;  
+}
 #foot
 {
     display: flex;
