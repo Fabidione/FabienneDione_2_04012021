@@ -2,17 +2,19 @@ body
 {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+    
     /* overflow-x: hidden;metttre en fin de page */
+}
+body,html
+{
+    height: 100%;
 }
 .conteneur
 {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-}
-body
- {
-    font-family: 'Raleway', sans-serif;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -235,19 +237,22 @@ h4{
 {
     display: flex;
     background-color: #F2F2F2;
-    width: 100%;
     margin-left: auto;
+    width: 100%;
     margin-right: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
-.propos
+.propos,.chartre
 {
-    margin: auto;
+    margin-right: 250px;
 }
-.chartre
+.propos h4,.chartre h4,.assistance h4
 {
-    margin: auto;
+    margin-left: 0%;
 }
-.assistance
+.propos a,.chartre a,.assistance a
 {
-    margin: auto;
+    text-decoration: none;
+    color:black;
 }
