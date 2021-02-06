@@ -24,7 +24,7 @@ body,html
 #en_tête
 {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     flex-direction: row;
 }
 #image_logo
@@ -33,7 +33,7 @@ body,html
 }
 .logo
 {
-    width: 100px;
+    max-width: 100px;
     height: 100px;
     object-fit: contain;
 }
@@ -81,7 +81,7 @@ li
      line-height: 32px;
      text-align: center;
      background-color:#dedad9;
-  }
+}
 .map i
  {		
      color:black;
@@ -89,40 +89,53 @@ li
 .marseille_france
  {		 
      display: inline-block;
-     font-weight: bold;		       
-     line-height: 0px;
-     border-top:solid 1px #F2F2F2;
-     border-bottom:solid 1px #F2F2F2;
- }		
- .recherche		
- {		
+ }	
+ ::placeholder
+ {
+     font-weight: bold;
+     color:black;
+     font-size: 1.3em;
+ }	
+.champ
+{
+    height: 32px;
+    border: none
+}
+.recherche		
+{		
      display: inline-block;
      border-radius: 0PX 100px 100px 0px; 
      text-align: center;
      background-color: #0065FC;		     
-     width: 90px;
-     line-height: 0px;		
- }		 
+     width: 120px;
+     line-height: 0px;	
+     color:white;
+     border-left: none;
+}		 
 #filtres
 {
     display: flex;
     flex-direction: row;
     padding: 15px;
 }
-.titref p,.economique p,.familiale p,.romantique p,.animaux p
+.titref
+{
+    font-weight: bold;
+}
+.economique p,.familiale p,.romantique p,.animaux p
 {
     display:inline-block;
     font-weight:bold;
-    margin-top:-50px;
-    margin-bottom:-40px;
-    margin-right:30px;
+    margin-left: 10px;
+    height: 0px;
 }
-.titref i,.economique i,.familiale i,.romantique i,.animaux i
+.economique i,.familiale i,.romantique i,.animaux i
 {
     background-color: #DEEBFF;
     border-radius: 50%;
     line-height: 30px;
     width: 30px; 
+    text-align: center;
 }
 .economique,.familiale,.romantique,.animaux
 {
@@ -132,6 +145,10 @@ li
     line-height:0px ;
     margin-right: 20px;
 }
+.titref
+{
+    margin-right: 20px;
+}
 .economique:hover,.familiale:hover,.romantique:hover,.animaux:hover
 {
     color: crimson;
@@ -139,11 +156,6 @@ li
 i
 {
     color:#0065FC;
-}
-figure
-#titreimage1,#titreimage2,#titreimage3,#titreimage4,#titreimage5,#titreimage6
-{
-    padding-left: 8px;
 }
 figcaption
 {
@@ -155,10 +167,18 @@ img
     margin-left: auto;
     margin-right: auto;
 }
+.information i
+{
+    border: 1px solid  #F2F2F2;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
 #hebergements
 {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -168,10 +188,9 @@ img
     padding-top: 40px;
     border-radius: 20px;
     flex-wrap: wrap;
-    width: 67%;
+    max-width: 67%;
     display: flex;
     justify-content: space-between;
-    height: 700px;
 }
 .titre_marseille
 {
@@ -179,20 +198,45 @@ img
     margin-left: 40px;
     margin-bottom: -10px;
 }
+.image1,.image2,.image3,.image4,.image5,.image6
+{
+    width: 220px;
+    height: 112px;
+    object-fit: cover;
+}
 .cannebiere,.port,.mouettes,.mer,.panier,.amina
 {
-    width: 33%;
+   max-width: 33%; 
 }
 .cannebiere figure,.port figure,.mouettes figure,.mer figure,.panier figure,.amina figure
 {
-    border: white double 2px;
+    border: white double 4px;
     border-radius: 10px;
-    background-color: white; 
+    background-color: white;
+    width: 228px;
+}
+.nuit1 p,.nuit2 p,.nuit3 p,.nuit4 p,.nuit5 p,.nuit6 p
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.etoile1 i,.etoile2 i,.etoile3 i,.etoile4 i,.etoile5 i,.etoile6 i
+{
+    margin-bottom: 8px;
+}
+.titreimage1,.titreimage2,.titreimage3,.titreimage4,.titreimage5,.titreimage6
+{
+    margin-left: 9px;
+}
+.fas.fa-star.gris
+{
+    color:#DCDCDC
 }
 h4{
     margin-left: 40px;
     width: 100%;
 }
+
 #populaires
 {
     background-color: #F2F2F2;
@@ -238,7 +282,7 @@ h4{
 #activites
 {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
     height: 100%;
@@ -261,7 +305,7 @@ footer
 {
     display: flex;
     margin-left: auto;
-    width: 100%;
+    max-width:100%;
     margin-right: auto;
     flex-wrap: nowrap;
     justify-content: flex-start;
