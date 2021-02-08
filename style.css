@@ -3,8 +3,6 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    
-    /* overflow-x: hidden;metttre en fin de page */
 }
 body,html
 {
@@ -191,6 +189,7 @@ img
     max-width: 67%;
     display: flex;
     justify-content: space-between;
+    padding-right: 50px;
 }
 .titre_marseille
 {
@@ -200,20 +199,20 @@ img
 }
 .image1,.image2,.image3,.image4,.image5,.image6
 {
-    width: 220px;
+    width: 235px;
     height: 112px;
     object-fit: cover;
 }
-.cannebiere,.port,.mouettes,.mer,.panier,.amina
+.cannebiere,.hotel_port,.mouettes,.mer,.panier,.amina
 {
    max-width: 33%; 
 }
-.cannebiere figure,.port figure,.mouettes figure,.mer figure,.panier figure,.amina figure
+.cannebiere figure,.hotel_port figure,.mouettes figure,.mer figure,.panier figure,.amina figure
 {
     border: white double 4px;
     border-radius: 10px;
     background-color: white;
-    width: 228px;
+    width: 245px;
 }
 .nuit1 p,.nuit2 p,.nuit3 p,.nuit4 p,.nuit5 p,.nuit6 p
 {
@@ -236,20 +235,17 @@ h4{
     margin-left: 40px;
     width: 100%;
 }
-
 #populaires
 {
     background-color: #F2F2F2;
     padding-top: 40px;
     border-radius: 20px;
     flex-wrap: wrap;
-    width: 30%;
+    max-width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 700px;
-    padding-bottom: 20px;
-}
+} 
 .titre_populaires
 {
     margin-left: 20px;
@@ -257,45 +253,96 @@ h4{
 }
 .titre_populaires i
 {
-    margin-left:80px ;
-} 
+    margin-left: 50px;
+    color:black;
+}
+.image7,.image8,.image9
+{
+    width: 124px;
+    height: 140px;
+    object-fit: cover; 
+    border-radius: 10px 0px 0px 10px;
+}
+#soleil figure,#eau figure, #bleu figure
+{
+    border: white double 4px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 300px;
+}
 .soleil_image,.soleil_titre,.eau_image,.eau_titre,.bleu_image,.bleu_titre
 {
     display:inline-block;
 }
 .soleil_titre,.eau_titre,.bleu_titre
 {
-    margin-left: 10px;
+    margin-left: 9px;
 }
-#soleil figure,#eau figure, #bleu figure
+.nuitpop1 p,.nuitpop2 p,.nuitpop3 p
 {
-    border: white double 2px;
-    margin-left: 20px;
-    border-radius: 10px;
-    background-color: white;
-    width: 350px;
-}
-#soleil
-{
-    margin-top: -40px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 #activites
 {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 100%;
-    margin-left: -40px;   
+    margin-left: -40px;
+    margin-bottom: 30px;
 }
-.port figure,.fort figure,.frioul figure,.parc figure,.dame figure,.longchamp figure
+.port,.parc
 {
-    box-shadow: 0px 2px 5px #F2F2F2;
+    max-width: 25%;
+}
+#fort_frioul,#dame_longchamp
+{
+    max-width: 25%;
+}
+.port figure,.fort figure,.parc figure,.dame figure,.frioul figure,.longchamp figure
+{
+    box-shadow: 0px 2px 10px #F2F2F2;
     border-radius: 10px;
+    width: 300px;
 }
 .port figcaption,.fort figcaption,.frioul figcaption,.parc figcaption,.dame figcaption,.longchamp figcaption
 {
-    height: 40px;  
+    height: 50px;  
+    margin-left: 8px;
+}
+.image_port,.image_parc
+{
+    width: 300px;
+    height: 385px;
+    object-fit: cover;
+}
+.image_fort
+{
+    width: 300px;
+    height: 175px;
+    object-fit: cover;
+}
+.image_frioul
+{
+    width: 300px;
+    height: 110px;
+    object-fit:cover; 
+    margin-top: 30px;
+}
+.image_dame
+{
+    width: 300px;
+    height: 140px;
+    object-fit: cover;
+}
+.image_longchamp
+{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 25px;
 }
 footer
 {
@@ -322,4 +369,8 @@ footer
 {
     text-decoration: none;
     color:black;
+}
+body
+{
+    overflow-x: hidden;
 }
