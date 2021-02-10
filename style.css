@@ -11,8 +11,7 @@ body,html
 .conteneur
 {
     max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -47,21 +46,23 @@ body,html
     width: 30%;
     margin-top: 20px;
 }
-.activites,.hebergements,.inscrire
+.activites,.hebergements
 {
     margin-left: 30px;
-    text-decoration: none;
-    color:#0065FC;
+    text-decoration:none;
+    color: black;
+}
+.activites:hover,.hebergements:hover
+{
+    border-top: 1px solid  #0065FC;
+    color: #0065FC;
 }
 .inscrire
 {
     text-decoration: none;
     color: #0065FC;
     font-weight: bold;
-}
-.activites:hover,.hebergements:hover
-{
-    color:gray;
+    margin-left: 30px;
 }
 ul
 {
@@ -80,6 +81,10 @@ li
      text-align: center;
      background-color:#dedad9;
 }
+.map
+{
+    margin-right: -6px;
+}
 .map i
  {		
      color:black;
@@ -87,6 +92,7 @@ li
 .marseille_france
  {		 
      display: inline-block;
+     margin-right: -6px;
  }	
  ::placeholder
  {
@@ -96,25 +102,23 @@ li
  }	
 .champ
 {
-    height: 32px;
-    border: none
+    height: 31px;
 }
 .recherche		
 {		
      display: inline-block;
-     border-radius: 0PX 100px 100px 0px; 
+     border-radius: 0PX 10px 10px 0px; 
      text-align: center;
-     background-color: #0065FC;		     
-     max-width: 120px;
-     line-height: 0px;	
+     background-color: #0065FC;		     	
      color:white;
-     border-left: none;
+     padding: 0px 10px 0px 10px;
+     line-height: 0px;
 }		 
 #filtres
 {
     display: flex;
-    flex-direction: row;
-    padding: 15px;
+    align-items: center;
+    margin: 20px 0px 41px 0px;
 }
 .titref
 {
@@ -125,23 +129,32 @@ li
     display:inline-block;
     font-weight:bold;
     margin-left: 10px;
-    height: 0px;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .economique i,.familiale i,.romantique i,.animaux i
 {
     background-color: #DEEBFF;
     border-radius: 50%;
-    line-height: 30px;
-    width: 30px; 
-    text-align: center;
+    height: 40px;
+    width: 40px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .economique,.familiale,.romantique,.animaux
 {
     border:solid 1px  #F2F2F2;
     border-radius: 50px;
-    width: 200px;
-    line-height:0px ;
     margin-right: 20px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    flex-wrap: wrap;
+    position: relative;
 }
 .titref
 {
@@ -240,7 +253,7 @@ h4{
     background-color: #F2F2F2;
     padding-top: 40px;
     border-radius: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 30%;
     display: flex;
     flex-direction: column;
@@ -269,7 +282,8 @@ h4{
     margin-left: 20px;
     border-radius: 10px;
     background-color: white;
-    max-width: 300px;
+    max-width: 100%;
+    height: 148px;
 }
 .soleil_image,.soleil_titre,.eau_image,.eau_titre,.bleu_image,.bleu_titre
 {
@@ -287,25 +301,24 @@ h4{
 #activites
 {
     display: flex;
-    max-width: 100%;
+    max-width: 1300px;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin-left: -40px;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+    justify-content: space-between;
 }
-.port,.parc
+.port,.fort,.parc,.dame,.frioul,.longchamp 
 {
-    max-width: 25%;
-}
-#fort_frioul,#dame_longchamp
-{
-    max-width: 25%;
-}
-.port figure,.fort figure,.parc figure,.dame figure,.frioul figure,.longchamp figure
-{
-    box-shadow: 0px 2px 10px #F2F2F2;
+    box-shadow: 0px 0px 20px #F2F2F2;
     border-radius: 10px;
-    width: 300px;
+}
+.frioul 
+{
+    margin-top: 45px;
+}
+.longchamp
+{
+    margin-top: 40px;
 }
 .port figcaption,.fort figcaption,.frioul figcaption,.parc figcaption,.dame figcaption,.longchamp figcaption
 {
@@ -314,35 +327,33 @@ h4{
 }
 .image_port,.image_parc
 {
-    width: 300px;
+    width: 295px;
     height: 385px;
     object-fit: cover;
 }
 .image_fort
 {
-    width: 300px;
+    width: 295px;
     height: 175px;
     object-fit: cover;
 }
 .image_frioul
 {
-    width: 300px;
+    width: 295px;
     height: 110px;
     object-fit:cover; 
-    margin-top: 30px;
 }
 .image_dame
 {
-    width: 300px;
+    width: 295px;
     height: 140px;
     object-fit: cover;
 }
 .image_longchamp
 {
-    width: 300px;
+    width: 295px;
     height: 150px;
     object-fit: cover;
-    margin-top: 25px;
 }
 footer
 {
@@ -372,9 +383,15 @@ footer
 }
 @media screen and (max-width:1024px)
 {
+    body
+    {
+        margin-left: 20px;
+    }
     .conteneur
     {
         max-width: 1024px;
+        margin-left: 8px;
+        margin-right: 8px;
     }   
     #en_tête
     {
@@ -569,6 +586,107 @@ footer
 }
 @media screen and (max-width:425px)
 {
+    .conteneur
+    {
+        max-width: 425px;
+    } 
+    #navigation
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    #filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .romantique
+    {
+        margin-left: 70px;
+    }
+    .economique,.familiale,.romantique,.animaux
+    {
+        width: 230px;
+    }
+    #hebergements
+    {
+        max-width: 768px;
+    }
+    #hebergements_marseille
+    ‹{
+        max-width:63%;
+    }
+    .cannebiere,.hotel_port,.mouettes,.mer,.panier,.amina
+    {
+        max-width: 50%; 
+    }
+    .image1,.image2,.image3,.image4,.image5,.image6
+    {
+        width: 192px;
+        height: 88px;
+        object-fit: cover;
+    }
+    .cannebiere figure,.hotel_port figure,.mouettes figure,.mer figure,.panier figure,.amina figure
+    {
+        width: 200px;
+        height: 190px;
+        margin-left: 20px;
+    }
+    #populaires
+    {
+        max-width:29%;
+    }
+    .image7,.image8,.image9
+    {
+        width: 180px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    #soleil figure,#eau figure, #bleu figure
+    {
+        max-width: 208px;
+    }
+    .port figure,.fort figure,.parc figure,.dame figure,.frioul figure,.longchamp figure
+    {
+        width: 177px;
+    }
+    .image_port,.image_parc
+    {
+        width: 177px;
+        height: 385px;
+        object-fit: cover;
+    }
+    .image_fort
+    {   
+        width: 177px;
+        height: 175px;
+        object-fit: cover;
+    }
+    .image_frioul
+    {
+        width: 177px;
+        height: 110px;
+        object-fit:cover; 
+        margin-top: 30px;
+    }
+    .image_dame
+    {
+        width: 177px;
+        height: 140px;
+        object-fit: cover;
+    }
+    .image_longchamp
+    {
+        width: 177px;
+        height: 150px;
+        object-fit: cover;
+        margin-top: 25px;
+    }
+    .propos,.chartre
+    {
+    margin-right: 120px;
+    }
 
-    
 }
