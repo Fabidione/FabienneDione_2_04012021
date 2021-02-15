@@ -365,7 +365,7 @@ footer
     margin-left: auto;
     max-width:100%;
     margin-right: auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 .propos,.chartre
@@ -465,6 +465,10 @@ footer
     height: 150px;
     object-fit: cover;
     }  
+    .propos,.chartre
+    {
+    margin-right: 200px;
+    }
 } 
 @media screen and (max-width:1160px)
 {
@@ -641,13 +645,21 @@ footer
     object-fit: cover;
     margin-top: 25px;
     }
+    .propos,.chartre
+    {
+    margin-right: 150px;
+    }
 }
-@media all and (min-width : 608px) and (max-width : 852px) 
+@media all and (min-width : 562px) and (max-width : 852px) 
 {
-    .familiale
+    .familiale,.romantique,.animaux
     {
         margin-left: 90px;
         margin-top: 10px;
+    }
+    .propos,.chartre
+    {
+    margin-right: 100px;
     }
 }
 @media screen and (max-width:784px)
@@ -680,6 +692,65 @@ footer
 }
 }
 @media screen and (max-width:740px)
+{
+    .port,.fort,.parc,.dame,.frioul,.longchamp
+    {
+        margin-right: 70px;
+        width: 200px;
+    }
+    .image_port,.image_parc
+    {
+    width: 200px;
+    height: 385px;
+    object-fit: cover;
+    }
+    .image_fort
+    {
+    width: 200px;
+    height: 175px;
+    object-fit: cover;
+    }
+    .image_frioul
+    {
+    width: 200px;
+    height: 110px;
+    object-fit:cover; 
+    }
+    .image_dame
+    {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    }
+    .image_longchamp
+    {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    }
+    .parc,.dame
+    {
+        margin-top: 50px;
+    }
+    .propos,.chartre
+    {
+    margin-right: 40px;
+    }
+}
+@media screen and (max-width:595px)
+{
+    .animaux
+    {
+        margin-left: 80px;
+    }
+    #foot
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:574px)
+
 
 
 
