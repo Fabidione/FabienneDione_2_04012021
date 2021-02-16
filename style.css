@@ -73,7 +73,7 @@ li
     display: inline;
 }
 .map
- {		     
+ {           
      display: inline-block;
      border-radius: 100px 0px 0px 100px;
      width:30px;
@@ -86,34 +86,34 @@ li
     margin-right: -6px;
 }
 .map i
- {		
+ {      
      color:black;
  }
 .marseille_france
- {		 
+ {       
      display: inline-block;
      margin-right: -6px;
- }	
+ }  
  ::placeholder
  {
      font-weight: bold;
      color:black;
      font-size: 1.3em;
- }	
+ }  
 .champ
 {
     height: 31px;
 }
-.recherche		
-{		
+.recherche      
+{       
      display: inline-block;
      border-radius: 0PX 10px 10px 0px; 
      text-align: center;
-     background-color: #0065FC;		     	
+     background-color: #0065FC;             
      color:white;
      padding: 0px 10px 0px 10px;
      line-height: 0px;
-}		 
+}        
 #filtres
 {
     display: flex;
@@ -739,17 +739,124 @@ footer
 }
 @media screen and (max-width:595px)
 {
+    #en_tête
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #image_logo
+    {
+        margin-bottom: -20px;
+    }
+    #navigation
+    {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    }   
+    .titref
+    {
+        max-width: 100%;
+    }
+    #filtres
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    .familiale
+    {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #cercle
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .romantique
+    {
+        margin-left: 5%;
+    }
     .animaux
     {
-        margin-left: 80px;
+        margin-left: 0px;
+    }
+    .cannebiere,.hotel_port,.mouettes,.mer,.panier,.amina
+    {
+        max-width: 100%; 
     }
     #foot
     {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
+        flex-wrap: wrap;
+        
     }
 }
-@media screen and (max-width:574px)
+@media screen and (max-width:375px)
+{
+    .hebergements,.inscrire
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .animaux
+    {
+        margin-left: 15px;
+    }
+    #populaires
+    {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .image7,.image8,.image9
+    {
+        width: 200px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    #soleil figure,#eau figure, #bleu figure
+    {
+        max-width: 210px;
+        height: 240px;
+    }
+}
+@media screen and (max-width:320px)
+{
+    .image7,.image8,.image9
+    {
+        width: 190px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    #soleil figure,#eau figure, #bleu figure
+    {
+        max-width: 198px;
+        height: 240px;
+    }
+    .cannebiere,.hotel_port,.mouettes,.mer,.panier,.amina
+    {
+        width: 150px;
+
+    }
+    .cannebiere figure,.hotel_port figure,.mouettes figure,.mer figure,.panier figure,.amina figure
+    {
+        height: 240px;
+        max-width: 240px;
+    }
+}
+
 
 
 
