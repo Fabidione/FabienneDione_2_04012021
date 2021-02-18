@@ -111,10 +111,9 @@ li
 {       
      display: inline-block;
      border-radius: 0PX 10px 10px 0px; 
-     text-align: center;
      background-color: #0065FC;             
      color:white;
-     padding: 0px 10px 0px 10px;
+     padding: 0px 20px 0px 20px;
      height: 39px;
      line-height: 6px;
 }        
@@ -141,24 +140,24 @@ li
 {
     background-color: #DEEBFF;
     border-radius: 50%;
-    height: 40px;
-    width: 40px; 
+    width: 51px; 
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 51px;
 }
 .economique,.familiale,.romantique,.animaux
 {
     border:solid 1px  #F2F2F2;
     border-radius: 50px;
     margin-right: 20px;
-    height: 40px;
     display: flex;
     flex-direction: row;
     margin-left: 25px;
     flex-wrap: wrap;
     position: relative;
+
 }
 .titref
 {
