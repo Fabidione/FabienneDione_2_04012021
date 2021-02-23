@@ -107,6 +107,10 @@ li
     width: 200px;
     border:solid 1px  #F2F2F2;
 }
+.loupe
+{
+     visibility: hidden;
+}
 .recherche      
 {       
      display: inline-block;
@@ -780,6 +784,13 @@ footer
 }
 @media screen and (max-width:662px)
 {
+    .activites:hover,.hebergements:hover
+{
+    border-bottom: 1px solid  #0065FC;
+    color: #0065FC;
+    padding-bottom: 20px;
+    border-top: none;
+}
     #foot
     {
         flex-direction: column;
@@ -795,6 +806,104 @@ footer
 }
 @media screen and (max-width:606px)
 {
+    .conteneur
+    {
+    max-width: 606px;
+    margin: auto;
+    }
+    #en_tête
+    {
+        position: relative;
+        width: 100%;
+    } 
+    .hebergements,.activites
+    {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+    .hebergements:hover,.activites:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
+    .inscrire 
+    {
+        position: absolute;
+        bottom: 60%;
+        right: -6%;
+    }
+    #navigation
+    {
+        justify-content: flex-start;
+    }
+    .recherche
+    {
+        visibility: hidden;
+    }
+    .loupe
+    {
+    visibility: visible;
+    margin-left: -140px;
+    }
+    .loupe     
+    {       
+     display: inline-block;
+     border-radius: 10PX 10px 10px 10px; 
+    background-color:#0065FC;
+     padding: 10px 30px 10px 20px;
+     height: 39px;
+     line-height: 6px;
+     width: 20px;
+     text-align: center;
+    }   
+    ::placeholder
+    {
+        font-size: 1.2em;
+    }
+    .champ
+    {
+    max-width: 606px;
+    }    
+    .loupe i
+    { 
+    color: white;  
+    }   
+    .hebergements
+    {
+        margin-left: -25px;
+    }
+    .economique,.familiale,.romantique,.animaux
+    {
+        margin-right: 40px;
+    }
+    #hebergements_marseille:nth-child(1) 
+    {
+        order: 2;
+    }
+    #populaires:nth-child(2) 
+    {
+        order: 1;
+    }
+    .titref
+    {
+        width: 100%;
+    }
+    #filtres
+    {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    .economique,.familiale,.romantique,.animaux
+    {
+        margin-left: 0%;
+        margin-top: 10px;
+        margin-right: 80px;
+    }
+    .titre_populaires i
+    {
+        margin-left: 140px;
+    }
     .image1,.image2,.image3,.image4,.image5,.image6
     {
         width: 320px; 
@@ -812,6 +921,10 @@ footer
     {
         flex-direction: column;
         padding-left: 50px;
+    }
+    .titre_activites
+    {
+        margin-left: 40px;
     }
     .port,.fort,.parc,.dame,.frioul,.longchamp 
     {
@@ -854,127 +967,199 @@ footer
 }
 @media screen and (max-width:574px)
 {
+    .titre_populaires i
+    {
+        margin-left: 130px;
+    }
     .titref
     {
         width: 100%;
     }
-    #filtres
-    {
-        flex-direction: row;
-        align-items: flex-start;
-        max-width: 100%;
-    }
+}
+@media screen and (max-width:551px)
+{
     .economique,.familiale,.romantique,.animaux
     {
-        margin-left: 0%;
-        margin-top: 10px;
+        margin-right: 50px;
     }
 }
 @media screen and (max-width:502px)
 {
-    #en_tête
+
+    .economique,.familiale,.romantique,.animaux
     {
-        position: relative;
-        width: 100%;
-    } 
-    .inscrire 
-    {
-        position: absolute;
-        bottom: 50%;
-        right: -6%;
+        margin-right: 30px;
     }
     .hebergements
     {
-        margin-left:-55%;
-        width: 50%;
+        margin-left:-12%;
     }
+
     .activites
     {
         margin-left:40px;
         border-bottom:2px solid #F2F2F2;
         padding-bottom: 10px;
-        
     }
-    .activites:hover,.hebergements:hover
-{
-    border-top: none;
-    border-bottom: 2px solid  #0065FC;
-    color: #0065FC;
-    padding-bottom: 10px;
-    width: 100%;
 }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:375px)
+@media screen and (max-width:470px)
 {
-    .hebergements,.inscrire
+    .titre_populaires i
     {
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 90px;
     }
-    .animaux
+    .hebergements
     {
-        margin-left: 15px;
+        margin-left:-10%;
     }
-    #populaires
-    {
-        flex-direction: column;
-        max-width: 100%;
-    }
-    
     .image7,.image8,.image9
     {
-        width: 200px;
-        height: 90px;
-        object-fit: cover;
-        border-radius: 10px 10px 0px 0px;
+    width: 120px;
+    height: 140px;    
     }
     #soleil figure,#eau figure, #bleu figure
     {
-        max-width: 210px;
-        height: 240px;
+    margin-left: 40px;
+    max-width: 300px;
+    height: 148px;
+    }
+    #activites
+    {
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:450px)
+{
+    .economique,.familiale,.romantique,.animaux
+    {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:431px)
+{
+    .titre_populaires i
+    {
+        margin-left: 70px;
+    }
+    .economique,.familiale,.romantique,.animaux
+    {
+        margin-right: 50px;
+    }
+    .economique p,.familiale p,.romantique p,.animaux p
+    {
+    margin-left: 5px;
+    padding-right: 10px;
+    font-size: 0.9em;
+    }
+    .economique,.romantique,.familiale
+    {   
+    margin-right: 20px;
+    margin-left: -10px;
+    }   
+    .animaux
+    {
+        margin-left:-12px;
+    }
+}
+@media screen and (max-width:431px)
+{
+    .hebergements
+    {
+        margin-left:-10%;
+    }
+}
+@media screen and (max-width:409px)
+{
+
+    #populaires
+    {
+        max-width: 409px;
+    }
+    .titre_populaires i
+    {
+        margin-left: 30px;
+    }
+    .economique p,.familiale p,.romantique p,.animaux p
+    {
+    padding-right: 20px;
+    }
+}
+@media all and (min-width : 325px) and (max-width : 365px) 
+{
+    .titre_populaires i
+    {
+        margin-left: 0px;
+    }
+    .titre_populaires
+    {
+        font-size: 0.9em;
+        
+    }
+    .economique p,.familiale p,.romantique p,.animaux p
+    {
+    margin-left: 5px;
+    padding-right: 10px;
+    font-size: 0.7em;
+    }
+}
+@media screen and (max-width:359px)
+{
+    ::placeholder
+    {
+        font-size: 1.1em;
+    }
+    
+}
+@media screen and (max-width:350px)
+{
+    .hebergements
+    {
+        margin-right: 20px;
+    }
+    .trouvez 
+    {
+        font-size: 0.9em;
+    }
+
+}
+@media screen and (max-width:332px)
+{
+    .hebergements
+    {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:325px)
+{
+    .trouvez 
+    {
+        font-size: 0.8em;
+    }
+    .en_plein
+    {
+        font-size: 0.9em;
+    }
+    #populaires
+    {
+        max-width: 325px;
+        background-color:#F2F2F2;
+    }
+.economique p,.familiale p,.romantique p,.animaux p
+    {
+    margin-left: 5px;
+    padding-right: 10px;
+    font-size: 0.7em;
     }
 }
 @media screen and (max-width:320px)
 {
-    .image7,.image8,.image9
-    {
-        width: 190px;
-        height: 90px;
-        object-fit: cover;
-        border-radius: 10px 10px 0px 0px;
-    }
-    #soleil figure,#eau figure, #bleu figure
-    {
-        max-width: 198px;
-        height: 240px;
-    }
-    .cannebiere,.hotel_port,.mouettes,.mer,.panier,.amina
-    {
-        width: 150px;
 
-    }
-    .cannebiere figure,.hotel_port figure,.mouettes figure,.mer figure,.panier figure,.amina figure
-    {
-        height: 240px;
-        max-width: 240px;
-    }
 }
+
+
+
+
 
 
 
