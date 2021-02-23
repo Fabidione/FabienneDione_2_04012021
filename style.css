@@ -35,6 +35,7 @@ body,html
     max-width: 100px;
     height: 100px;
     object-fit: contain;
+    margin-left: auto;
 }
 .logo img
 {
@@ -1103,6 +1104,18 @@ footer
     .economique p,.familiale p,.romantique p,.animaux p
     {
     padding-right: 20px;
+    }
+}
+@media screen and (max-width:375px)
+{
+footer
+    {
+        width: 375px;
+        padding-right: 0%;
+    }
+    #foot
+    {
+        margin-left: 30px;
     }
 }
 @media all and (min-width : 325px) and (max-width : 365px) 
