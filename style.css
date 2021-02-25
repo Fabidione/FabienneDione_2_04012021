@@ -1,3 +1,5 @@
+Css
+
 body
 {
     margin: 0;
@@ -11,7 +13,9 @@ body,html
 .conteneur
 {
     max-width: 1300px;
-    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+
 
 }
 * {
@@ -19,62 +23,68 @@ body,html
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
-#en_tête
-{
-    display: flex;
-    max-width: 100%;
-    flex-direction: row;
-}
-#image_logo
-{
-    width: 70%;
-    margin-left: 0px;
-}
 .logo
 {
     max-width: 100px;
     height: 100px;
     object-fit: contain;
-    margin-left: auto;
+    margin-left: 20px;
+
+    
 }
 .logo img
 {
     width: 383px;
     height: 114px;
 }
-#navigation
+header 
 {
     display: flex;
     flex-direction: row;
-    width: 30%;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 
 }
-.activites,.hebergements
+.lien 
 {
-    margin-left: 30px;
-    text-decoration:none;
+    padding-top: 40px;
+}
+.nav
+{
+    display: flex;
+}
+nav a 
+{
+    font-size: 0.9em;
     color: black;
+    padding-top: 3px;
+    text-decoration: none;
 }
-.activites:hover,.hebergements:hover
-{
-    border-top: 1px solid  #0065FC;
-    color: #0065FC;
-    padding-top: 35px;
-}
-.inscrire
+a 
 {
     text-decoration: none;
+    color: black;
+    font-style: normal;
+}
+a:hover 
+{
+    text-decoration: #0065FC;
+    color: #0065FC;
+}
+header nav a {
+    margin-left: 20px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+.hebergements-activites a:hover {
+    border-top: 1px solid #0065FC;
+}
+.inscrire {
     color: #0065FC;
     font-weight: bold;
-    margin-left: 30px;
-}
-ul
-{
-    list-style-type:none;
-}
-li
-{
-    display: inline;
+    margin-right: 10px;
 }
 .map
  {           
@@ -107,12 +117,13 @@ li
 .champ
 {
     height: 39px;
-    width: 200px;
+    width: 250px;
     border:solid 1px  #F2F2F2;
 }
 .loupe
 {
      visibility: hidden;
+     padding-left: 0px;
 }
 .recherche      
 {       
@@ -123,6 +134,7 @@ li
      padding: 0px 20px 0px 20px;
      height: 39px;
      line-height: 6px;
+     
 }        
 #filtres
 {
@@ -397,23 +409,7 @@ footer
 }
 @media screen and (max-width:1275px)
 {
-    body
-    {
-        margin-left: 20px;
-        margin-right: 20px; 
-    }
-    #image_logo
-    {
-        width:58%;
-    }
-    #navigation
-    {
-        width: 42%;
-    }
-    .activites,.hebergements
-    {   
-        margin-right: 40px;
-    }
+    
     #hebergements_marseille
     {
         max-width: 69%;
@@ -421,6 +417,7 @@ footer
 }
 @media screen and (max-width:1243px)
 {
+
     .titre_populaires i
     {
         margin-left: 4px;
@@ -510,19 +507,7 @@ footer
 
 @media screen and (max-width:1141px)
 {
-    #en_tête
-    {
-    flex-direction: column;
-    }
-    #image_logo
-    {
-        width:100%;
-    }
-    #navigation
-    {
-        width: 100%;
-        justify-content: flex-end;
-        margin-top: 0px;
+
     }
     .port,.fort,.parc,.dame,.frioul,.longchamp
     {
@@ -696,6 +681,11 @@ footer
 }
 @media screen and (max-width:790px)
 {
+    .conteneur
+    {
+        max-width: 790px;
+
+    }
     .port,.fort,.parc,.dame,.frioul,.longchamp 
     {
         margin-right: 80px;
@@ -787,13 +777,11 @@ footer
 }
 @media screen and (max-width:662px)
 {
-    .activites:hover,.hebergements:hover
-{
-    border-bottom: 1px solid  #0065FC;
-    color: #0065FC;
-    padding-bottom: 20px;
-    border-top: none;
-}
+    .conteneur
+    {
+        max-width: 662px;
+        
+    }
     #foot
     {
         flex-direction: column;
@@ -811,37 +799,62 @@ footer
 {
     .conteneur
     {
-    max-width: 606px;
-    margin: auto;
+        max-width: 606px;
     }
-    #en_tête
+    header 
     {
+        display: flex;
         position: relative;
-        width: 100%;
-    } 
-    .hebergements,.activites
-    {
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: 10px;
-        width: 100%;
-
+        margin-bottom: 30px;
+        padding-top: 0px;
+        margin-left: 0px;
     }
-    .hebergements:hover,.activites:hover
+    .inscrire
     {
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: 10px;
-        display: block;
-        width: 100%;
+        margin-right: 40px;
+        position: absolute;
+        bottom: 50%;
+        right: -6%;
     }
-    .inscrire 
+    .hebergements-activites 
     {
         position: absolute;
-        bottom: 60%;
-        right: -1%;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
-    #navigation
+    #logo
     {
-        justify-content: flex-start;
+        align-self: flex-start;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .lien2
+    {
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+        min-width: 50%;
+        margin: auto 0;
+        padding: 15px 0;
+    }
+    .lien1 {
+        text-align: center;
+        padding: 15px 0;
+        margin: inherit;
+        min-width: 50%;
+        margin: auto 0;
+        border-bottom: 3px solid #F2F2F2;
+
+    }
+    .hebergements-activites a:hover {
+        border-top: none;
+    }
+    .lien1:hover,.lien2:hover
+     {
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
     }
     #boutonr
     {
@@ -849,12 +862,11 @@ footer
     }
     .recherche
     {
-        visibility: hidden;
+        display: none;
     }
     .loupe
     {
     visibility: visible;
-    margin-left: -140px;
     }
     .loupe     
     {       
@@ -866,19 +878,13 @@ footer
      line-height: 6px;
      width: 30px;
      text-align: center;
-    }   
-    ::placeholder
-    {
-        font-size: 1.2em;
-    }   
+     margin-left: -10px;
+    }     
     .loupe i
     { 
     color: white;  
     }   
-    .hebergements
-    {
-        margin-left: -25px;
-    }
+
     .economique,.familiale,.romantique,.animaux
     {
         margin-right: 40px;
@@ -984,6 +990,12 @@ footer
 }
 @media screen and (max-width:574px)
 {
+    .conteneur
+    {
+        max-width: 574px;
+    
+    }
+    
     .titre_populaires i
     {
         margin-left: 130px;
@@ -1002,32 +1014,25 @@ footer
 }
 @media screen and (max-width:502px)
 {
-
+    .conteneur
+    {
+        max-width: 502px;
+        
+    }
     .economique,.familiale,.romantique,.animaux
     {
         margin-right: 30px;
     }
-    .hebergements
-    {
-        margin-left:-12%;
-    }
-
-    .activites
-    {
-        margin-left:40px;
-        border-bottom:2px solid #F2F2F2;
-        padding-bottom: 10px;
-    }
 }
 @media screen and (max-width:470px)
 {
+    .conteneur
+    {
+        max-width: 470px;
+    }
     .titre_populaires i
     {
         margin-left: 90px;
-    }
-    .hebergements
-    {
-        margin-left:-10%;
     }
     .image7,.image8,.image9
     {
@@ -1047,6 +1052,12 @@ footer
 }
 @media screen and (max-width:450px)
 {
+
+    .conteneur
+    {
+        max-width: 450px;
+    }
+    
     .economique,.familiale,.romantique,.animaux
     {
         margin-right: 20px;
@@ -1054,6 +1065,10 @@ footer
 }
 @media screen and (max-width:431px)
 {
+    .conteneur
+    {
+        max-width: 431px;
+    }
     .titre_populaires i
     {
         margin-left: 70px;
@@ -1078,15 +1093,14 @@ footer
         margin-left:-12px;
     }
 }
-@media screen and (max-width:431px)
-{
-    .hebergements
-    {
-        margin-left:-10%;
-    }
-}
 @media screen and (max-width:409px)
 {
+    .conteneur
+    {
+        max-width: 409px;
+        
+    }
+    
     #populaires
     {
         max-width: 100%;
@@ -1108,7 +1122,21 @@ footer
 }
 @media screen and (max-width:375px)
 {
-footer
+    .champ
+    {
+    width: 220px;
+    }
+    ::placeholder
+    {
+        font-size: 1.2em;
+    }
+    .conteneur
+    {
+        max-width: 375px;
+    
+    }
+    
+    footer
     {
         width: 375px;
         padding-right: 0%;
@@ -1120,6 +1148,7 @@ footer
 }
 @media all and (min-width : 325px) and (max-width : 365px) 
 {
+    
     .titre_populaires i
     {
         margin-left: 0px;
@@ -1136,23 +1165,25 @@ footer
     font-size: 0.7em;
     }
 }
-@media screen and (max-width:359px)
+
+@media screen and (max-width:350px)
 {
     ::placeholder
     {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
-    
-}
-@media screen and (max-width:350px)
-{
-    .hebergements
+
+    .conteneur
     {
-        margin-right: 20px;
+        max-width: 350px;
     }
-    .trouvez 
+    .champ
     {
-        font-size: 0.9em;
+    width: 190px;
+    }
+    .inscrire
+    {
+        margin-right:30px;
     }
     #populaires
     {
@@ -1170,10 +1201,6 @@ footer
 }
 @media screen and (max-width:332px)
 {
-    .hebergements
-    {
-        margin-right: 5px;
-    }
     #populaires
     {
         width: 332px;
@@ -1182,14 +1209,7 @@ footer
 
 @media screen and (max-width:325px)
 {
-    .trouvez 
-    {
-        font-size: 0.8em;
-    }
-    .en_plein
-    {
-        font-size: 0.9em;
-    }
+    
     #populaires
     {
         max-width: 325px;
@@ -1204,12 +1224,14 @@ footer
 }
 @media screen and (max-width:320px)
 {
+
     .conteneur
     {
         max-width: 320px;
-        margin: auto;
-        padding-right: 0%;
+        margin-right: 20px;
+        margin-left: 20px;
     }
+    
     footer
     {
         width: 320px;
@@ -1236,34 +1258,7 @@ footer
         margin-left: 20px;
 
     }
-    #boutonr
-    {
-        width: 320px;
-
-    }
-    .champ
-    {
-        max-width: 150px;
-    }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
