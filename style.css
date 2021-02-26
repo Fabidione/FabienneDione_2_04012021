@@ -1,5 +1,3 @@
-Css
-
 body
 {
     margin: 0;
@@ -18,7 +16,8 @@ body,html
 
 
 }
-* {
+* 
+{
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -65,11 +64,6 @@ a
     text-decoration: none;
     color: black;
     font-style: normal;
-}
-a:hover 
-{
-    text-decoration: #0065FC;
-    color: #0065FC;
 }
 header nav a {
     margin-left: 20px;
@@ -140,7 +134,7 @@ header nav {
 {
     display: flex;
     align-items: center;
-    margin: 20px 0px 41px 0px;
+    margin: 20px 0px 40px 0px;
 }
 .titref
 {
@@ -151,7 +145,7 @@ header nav {
     display:inline-block;
     font-weight:bold;
     margin-left: 10px;
-    padding-right: 30px;
+    padding-right: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -545,17 +539,32 @@ footer
         object-fit: cover;
         margin-top: 25px;
     } 
-}
 @media screen and (max-width:1060px)
 {
     #filtres
     {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
-    .familiale,.romantique,.animaux
+    
+}
+@media screen and (max-width:1020px)
+{
+    .titref
     {
-        margin-left: 90px;
-        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #filtres
+    {
+        display: flex;
+        flex-direction: row;    
+    }
+    .economique
+    {
+        margin-left: 0px;
     }
 }
 
@@ -599,10 +608,6 @@ footer
     {
         max-width: 100%;
     }
-    .romantique p,.animaux p
-    {
-        display: inline-block;
-    }
     .port,.fort,.parc,.dame,.frioul,.longchamp
     {
     width: 185px;
@@ -644,6 +649,21 @@ footer
     margin-right: 150px;
     }
 }
+@media screen and (max-width:927px)
+{
+    .animaux
+    {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:890px)
+{
+    .animaux
+    {
+        margin-top: 10px;
+    }
+}
+
 @media screen and (max-width:857px)
 {
     .cannebiere,.hotel_port,.mouettes,.mer,.panier,.amina
@@ -787,8 +807,18 @@ footer
         flex-direction: column;
     }
 }
-@media screen and (max-width:638px)
+@media screen and (max-width:658px)
 {
+    .familiale
+    {
+        margin-right: 100px;
+    }
+    .romantique
+    {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 200px;
+    }
     #soleil figure,#eau figure, #bleu figure
     {
         margin-left: 40px;
@@ -1258,12 +1288,4 @@ footer
         margin-left: 20px;
 
     }
-    
-
-
-
-
-
-
-
-
+}
